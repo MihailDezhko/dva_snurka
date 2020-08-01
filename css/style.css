@@ -646,33 +646,38 @@ body {
 }
 
 .header_info {
-  padding-top: 170px;
+  display: flex;
+  align-items: center;
   height: 570px;
   background: url(../img/header_background.png) no-repeat center;
 }
+.info_wrapper3 {
+  display: flex;
+  margin-right: -150px;
+}
+.info_wrapper {
+  margin-left: -690px;
+}
 .header_info_content {
-  position: relative;
+  margin-top: 100px;
 }
 .header_inner {
-  position: absolute;
-  top: -80px;
-  left: -410px;
   height: 374px;
   width: 1083px;
-  background: url(../img/header_info_background.png) no-repeat center;
+  background: white url(../img/header_info_background.png) no-repeat center;
 }
 
-/*
 .header_inner_border {
-  width: 1073px;
+  margin: 30px;
+  margin-left: 0;
+  width: 1053px;
   height: 312px;
   border: 3px solid #000000;
+  border-left: none;
 }
-*/
+
 .header_img {
-  position: absolute;
-  top: -65px;
-  right: -70px;
+  margin-top: 60px;
 }
 
 .header_info_header {
@@ -1117,15 +1122,21 @@ body {
 /*style main section 4 end*/
 /*style main section 5 start*/
 .box5 {
-  margin-top: 87px;
+  margin-top: 100px;
   background: url(../img/box5_background.jpg) no-repeat center;
 }
+.box5_container {
+  display: flex;
+}
+
 .box5_main_conteiner {
   display: flex;
   padding-top: 50px;
+  margin-left: 340px;
 }
 .box5_content {
   text-align: right;
+  margin-left: 50px;
 }
 .box5_content_text {
   font-family: "Oswald";
@@ -1135,12 +1146,16 @@ body {
   line-height: 35px;
   text-align: right;
   text-transform: uppercase;
-  color: /* #AF755D*/ white;
+  color: #af755d;
   padding-top: 124px;
+  padding-bottom: 8px;
+}
+.box5_span_text {
+  color: #393939;
 }
 .box5_content_button {
   width: 231px;
-  border-top: 3px solid white;
+  border-top: 3px solid#393939;
   padding-top: 50px;
   margin-left: 200px;
 }
@@ -1157,7 +1172,23 @@ body {
   height: 52px;
   background: #af755d;
 }
-
+.box5_main {
+  z-index: 1;
+}
+.right_white {
+  margin-top: 100px;
+  margin-left: -180px;
+  width: 1002px;
+  height: 340px;
+  background: url(../img/box5_right_white.jpg);
+}
+.inner_border_black {
+  width: 979px;
+  height: 294px;
+  border: 2px solid #000000;
+  margin: 23px;
+  border-right: none;
+}
 /*style main section 5 end*/
 /*style main section 6 start*/
 .box6_content {

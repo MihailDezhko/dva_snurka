@@ -1,17 +1,5 @@
-@media screen and max-width(480px) {
-    .container {
-        width: 100%;
-    }
-
-    .wrapper {
-        width: 400px;
-    }
-
-    .header {
-        width: 100%;
-    }
-
-    .header_info {
-        width: 100%;
-    }
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
 }

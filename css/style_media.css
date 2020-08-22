@@ -1,9 +1,7 @@
 /*   Media     992  start    */
 
 @media (max-width: 992px) {
-  .fixed_line {
-    background-color: red;
-  }
+
 
   .container {
     width: 990px;
@@ -282,9 +280,10 @@
 
 /*   Media     992  end    */
 /*   Media     768  start    */
+
 @media (max-width: 768px) {
   .container {
-    width: 764px;
+    width: 768px;
   }
 
   .wrapper {
@@ -312,16 +311,25 @@
     padding-left: 20px;
   }
 
-  .header_info {
-    height: 470px;
-  }
-
   .info_wrapper3>img {
     display: none;
   }
 
   .nav_header_list>li {
     margin-right: 15px;
+  }
+
+
+  .nav_header_list>li:last-child {
+    margin-right: 10px;
+  }
+
+  .fixed_line_content {
+    margin-left: 15px;
+  }
+
+  .header_wrapper {
+    margin-left: 15px;
   }
 
   /*___________media 768 box1 start_____________ */
@@ -332,7 +340,6 @@
     column-gap: 3%;
     row-gap: 2%;
     padding-left: 25px;
-
   }
 
   .box1_header {
@@ -341,12 +348,10 @@
     padding-top: 40px;
   }
 
-
   /*  media   768  box2 start */
   .box2 {
     margin-top: 130px;
   }
-
 
   .box2_main_content {
     width: 100%;
@@ -355,7 +360,6 @@
   }
 
   .b2_content {
-
     text-indent: 30px;
     text-align: justify;
 
@@ -367,9 +371,6 @@
   }
 
   /* ________media  768   box3 start _____________*/
-  .container {
-    width: 768px;
-  }
 
   .box3 {
     margin-top: 70px;
@@ -377,7 +378,8 @@
 
   .box3_down {
     width: 100%;
-
+    margin-left: 0;
+    /*margin-right: 20px;  */
   }
 
   .box3_down>img {
@@ -393,7 +395,6 @@
   }
 
   .box3_content {
-
     display: grid;
     grid-template-columns: 384px 384px;
     grid-template-rows: 320px 320px 320px 320px;
@@ -435,8 +436,8 @@
   }
 
   .bottom_border {
-    width: 100%;
-    margin-left: 20px;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .box4_content {
@@ -450,92 +451,77 @@
   /*________________media 768  box5 start_____________*/
 
   .box5 {
-    margin-top: 0;
-    background: url(../img/box5_background.jpg) no-repeat center;
+    margin-top: 30px;
+    background: url(../img/box5_background.jpg) no-repeat contain;
   }
 
-  /*
-.box5_container {
-  display: flex;
+  .box5_img2 {
+    display: none;
+  }
+
+  .right_white {
+    margin-top: 25px;
+    margin-left: -565px;
+    margin-bottom: 25px;
+    width: 592px;
+
+    background: url(../img/box5_right_white.jpg);
+  }
+
+  .inner_border_black {
+    width: 565px;
+
+    border: 2px solid #000000;
+    margin: 23px;
+    border-right: none;
+  }
+
+  .box5_content {
+    margin-left: 10px;
+    margin-top: -85px;
+  }
+
+  .box5_img1>img {
+    width: 300px;
+  }
+
+
+  /*________________media 768  box6 start_____________*/
+  .box6_img {
+    margin-top: 150px;
+    margin-left: -50px;
+
+  }
+
+  .box6_main {
+    padding-left: 20px;
+  }
+
+  .direction_right {
+    padding-right: 15px;
+  }
+
+  .direction_left {
+    padding-left: 20px;
+  }
+
+  /*________________media 768  footer start_____________*/
+  .footer {
+    margin-top: 30px;
+  }
+
+  .footer_conteiner {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  /*________________media 768  footer end_____________*/
 }
 
-.box5_main_conteiner {
-  display: flex;
-  padding-top: 50px;
-  margin-left: 340px;
-}
-
-.box5_content {
-  text-align: right;
-  margin-left: 50px;
-}
-
-.box5_content_text {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 35px;
-  text-align: right;
-  text-transform: uppercase;
-  color: #af755d;
-  padding-top: 124px;
-  padding-bottom: 8px;
-}
-
-.box5_span_text {
-  color: #393939;
-}
-
-.box5_content_button {
-  width: 231px;
-  border-top: 3px solid#393939;
-  padding-top: 50px;
-  margin-left: 200px;
-}
-
-.box5_btn {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  width: 231px;
-  height: 52px;
-  background: #af755d;
-}
-
-.box5_main {
-  z-index: 1;
-}
-
-.right_white {
-  margin-top: 100px;
-  margin-left: -180px;
-  width: 1002px;
-  height: 340px;
-  background: url(../img/box5_right_white.jpg);
-}
-
-.inner_border_black {
-  width: 979px;
-  height: 294px;
-  border: 2px solid #000000;
-  margin: 23px;
-  border-right: none;
-}
-*/
+/*________________media 768 end_____________*/
 
 
 
-
-
-}
-
-/*   Media    768  end    */
 /*   Media     540   start    */
 @media (max-width: 540px) {
   .container {

@@ -527,6 +527,43 @@ body {
   color: #ffffff;
 }
 
+
+
+.btn_much_foto {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 231px;
+  height: 52px;
+  background: #af755d;
+  border: none;
+  margin: 45px auto 36px auto;
+}
+
+.btn_foto {
+  text-align: center;
+}
+
+.bottom_border_foto {
+  width: 961px;
+  border-bottom: 1px solid #000000;
+  text-align: center;
+  margin-left: 70px;
+}
+
+.bottom_border_foto {
+  display: none;
+}
+
+.btn_foto {
+  display: none;
+}
+
 /*style main section 3 end*/
 /*style main section 4 start*/
 .box4 {
@@ -626,6 +663,10 @@ body {
   font-size: 15px;
   line-height: 25px;
   color: #000000;
+}
+
+.menu_burger_how_much {
+  display: none;
 }
 
 .box4_cont_price {

@@ -3,15 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <title>Document</title>
+
     <link rel="stylesheet" href="css/style_reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/style_media.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   </head>
 
   <body>
-    <div class="container">
+    <div class="container_old">
       <header class="header">
         <div class="fixed_line">
           <div class="wrapper">
@@ -137,8 +143,8 @@
                 </div>
                 <img
                   src="img/header_botinki.png"
-                  width="567px"
-                  height="386px"
+                  width="567"
+                  height="386"
                   alt=""
                 />
               </div>
@@ -315,10 +321,10 @@
               <div class="box3_img2 black_white"></div>
               <div class="box3_img3 black_white"></div>
               <div class="box3_img4 black_white"></div>
-              <div class="box3_img5 black_white"></div>
-              <div class="box3_img6 black_white"></div>
-              <div class="box3_img7 black_white"></div>
-              <div class="box3_img8 black_white"></div>
+              <div class="box3_img5 black_white dop_photo"></div>
+              <div class="box3_img6 black_white dop_photo"></div>
+              <div class="box3_img7 black_white dop_photo"></div>
+              <div class="box3_img8 black_white dop_photo"></div>
             </div>
             <div class="btn_foto">
               <button class="btn_much_foto">ещё фото</button>
@@ -337,36 +343,46 @@
               <div class="line1"></div>
             </div>
             <nav class="box4_nav">
-              <ul class="box4_nav_header_list">
-                <li>
-                  <img src="img/line_left_nav_box4.png" alt="" /><a href="#"
-                    >Кожаная обувь</a
+              <ul class="nav nav-tabs box4_nav_header_list">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    data-toggle="tab"
+                    href="#leather_shoes"
+                    ><img src="img/line_left_nav_box4.png" alt="" /> Кожаная
+                    обувь</a
                   >
                 </li>
-                <li>
-                  <img src="img/line_left_nav_box4.png" alt="" /><a href="#"
-                    >Обувь из замши/нубука</a
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#suede_shoes"
+                    ><img src="img/line_left_nav_box4.png" alt="" /> Обувь из
+                    замши/нубука</a
                   >
                 </li>
-                <li>
-                  <img src="img/line_left_nav_box4.png" alt="" /><a href="#"
-                    >Кроссовки</a
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#sneakers"
+                    ><img src="img/line_left_nav_box4.png" alt="" />
+                    Кроссовки</a
                   >
                 </li>
-                <li>
-                  <img src="img/line_left_nav_box4.png" alt="" /><a href="#"
-                    >Сумки и куртки</a
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#bags_and_jackets"
+                    ><img src="img/line_left_nav_box4.png" alt="" /> Сумки и
+                    куртки</a
                   >
                 </li>
-                <li>
-                  <img src="img/line_left_nav_box4.png" alt="" /><a href="#"
-                    >Ремонт</a
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#repairs"
+                    ><img src="img/line_left_nav_box4.png" alt="" /> Ремонт</a
                   >
                 </li>
               </ul>
             </nav>
-            <div class="box4_container">
-              <div class="box4_content">
+            <div class="box4_container tab-content">
+              <div
+                class="box4_content tab-pane fade show active"
+                id="leather_shoes"
+              >
                 <div class="box4_content_left">
                   <div class="box4_cont_header">
                     Полный уход за кожаной обувью
@@ -424,11 +440,215 @@
                   </div>
                 </div>
               </div>
+
+              <div class="box4_content tab-pane fade" id="suede_shoes">
+                <div class="box4_content_left">
+                  <div class="box4_cont_header">
+                    Полный уход за обувью из нубука
+                  </div>
+                  <div class="box4_litle_content">
+                    Классическая чистка, покраска уреза подошвы и каблука,
+                    защита от влаги/пропитка
+                  </div>
+                  <div class="box4_cont_price">
+                    <p>Низкие (<15 см) — 1000 Р</p>
+                    <p>Средние (15—30 см) — 1200 Р</p>
+                    <p>Высокие (>30 см) — 1500 Р</p>
+                  </div>
+                  <div class="glassazh">
+                    <div class="box4_cont_header">Глассаж</div>
+                    <div class="box4_main_price">1500 Р.</div>
+                  </div>
+                  <div class="box4_litle_content">
+                    полировка мыса и задника вручную с помощью воды и гуталина
+                  </div>
+                  <div class="patent">
+                    <div class="box4_cont_header">Патинирование</div>
+                    <div class="box4_main_price">4000 Р.</div>
+                  </div>
+                  <div class="box4_litle_content">
+                    искусственное состаривание кожи
+                  </div>
+                </div>
+              </div>
+
+              <div class="box4_content tab-pane fade" id="sneakers">
+                <div class="box4_content_left">
+                  <div class="box4_cont_header">Полный уход за кроссовками</div>
+                  <div class="box4_litle_content">
+                    Классическая чистка, покраска уреза подошвы и каблука,
+                    защита от влаги/пропитка
+                  </div>
+                  <div class="box4_cont_price">
+                    <p>Низкие (<15 см) — 1000 Р</p>
+                    <p>Средние (15—30 см) — 1200 Р</p>
+                    <p>Высокие (>30 см) — 1500 Р</p>
+                  </div>
+                  <div class="glassazh">
+                    <div class="box4_cont_header">Глассаж</div>
+                    <div class="box4_main_price">1500 Р.</div>
+                  </div>
+                  <div class="box4_litle_content">
+                    полировка мыса и задника вручную с помощью воды и гуталина
+                  </div>
+                  <div class="patent">
+                    <div class="box4_cont_header">Патинирование</div>
+                    <div class="box4_main_price">4000 Р.</div>
+                  </div>
+                  <div class="box4_litle_content">
+                    искусственное состаривание кожи
+                  </div>
+                </div>
+                <div class="box4_content_right">
+                  <div class="uhod_skin_fish">
+                    <div class="box4_cont_header">
+                      Уход за обувью из кардована,<br />
+                      рептилий, рыбьей кожи
+                    </div>
+                    <div class="box4_main_price">2000 P.</div>
+                  </div>
+
+                  <div class="box4_cont_header new_color">
+                    Новый цвет/перекраска
+                  </div>
+                  <div class="box4_cont_price">
+                    <p>Низкие (<15 см) — 3000 Р.</p>
+                    <p>Средние (15—30 см) — 4000 Р.</p>
+                    <p>Высокие (>30 см) — 5000 Р.</p>
+                  </div>
+                  <div class="box4_cont_header">Выведение реагентов</div>
+                  <div class="box4_litle_content">
+                    углубленная чистка и покраска, жировка, покрытие
+                    водоотталкивающими средствами
+                  </div>
+                  <div class="box4_cont_price">
+                    <p>Низкие (<15 см) — 3800 Р.</p>
+                    <p>Средние (15—30 см) — 4800 Р.</p>
+                    <p>Высокие (>30 см) — 5800 Р.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="box4_content tab-pane fade" id="bags_and_jackets">
+                <div class="box4_content_left">
+                  <div class="box4_cont_header">
+                    Полный уход за сумками и куртками
+                  </div>
+                  <div class="box4_litle_content">
+                    Классическая чистка, покраска уреза подошвы и каблука,
+                    защита от влаги/пропитка
+                  </div>
+                  <div class="box4_cont_price">
+                    <p>Низкие (<15 см) — 1000 Р</p>
+                    <p>Средние (15—30 см) — 1200 Р</p>
+                    <p>Высокие (>30 см) — 1500 Р</p>
+                  </div>
+                  <div class="glassazh">
+                    <div class="box4_cont_header">Глассаж</div>
+                    <div class="box4_main_price">1500 Р.</div>
+                  </div>
+                  <div class="box4_litle_content">
+                    полировка мыса и задника вручную с помощью воды и гуталина
+                  </div>
+                  <div class="patent">
+                    <div class="box4_cont_header">Патинирование</div>
+                    <div class="box4_main_price">4000 Р.</div>
+                  </div>
+                  <div class="box4_litle_content">
+                    искусственное состаривание кожи
+                  </div>
+                </div>
+                <div class="box4_content_right">
+                  <div class="uhod_skin_fish">
+                    <div class="box4_cont_header">
+                      Уход за обувью из кардована,<br />
+                      рептилий, рыбьей кожи
+                    </div>
+                    <div class="box4_main_price">2000 P.</div>
+                  </div>
+
+                  <div class="box4_cont_header new_color">
+                    Новый цвет/перекраска
+                  </div>
+                  <div class="box4_cont_price">
+                    <p>Низкие (<15 см) — 3000 Р.</p>
+                    <p>Средние (15—30 см) — 4000 Р.</p>
+                    <p>Высокие (>30 см) — 5000 Р.</p>
+                  </div>
+                  <div class="box4_cont_header">Выведение реагентов</div>
+                  <div class="box4_litle_content">
+                    углубленная чистка и покраска, жировка, покрытие
+                    водоотталкивающими средствами
+                  </div>
+                  <div class="box4_cont_price">
+                    <p>Низкие (<15 см) — 3800 Р.</p>
+                    <p>Средние (15—30 см) — 4800 Р.</p>
+                    <p>Высокие (>30 см) — 5800 Р.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="box4_content tab-pane fade" id="repairs">
+                <div class="box4_content_left">
+                  <div class="box4_cont_header">Полный ремонт</div>
+                  <div class="box4_litle_content">
+                    Классическая чистка, покраска уреза подошвы и каблука,
+                    защита от влаги/пропитка
+                  </div>
+                  <div class="box4_cont_price">
+                    <p>Низкие (<15 см) — 1000 Р</p>
+                    <p>Средние (15—30 см) — 1200 Р</p>
+                    <p>Высокие (>30 см) — 1500 Р</p>
+                  </div>
+                  <div class="glassazh">
+                    <div class="box4_cont_header">Глассаж</div>
+                    <div class="box4_main_price">1500 Р.</div>
+                  </div>
+                  <div class="box4_litle_content">
+                    полировка мыса и задника вручную с помощью воды и гуталина
+                  </div>
+                  <div class="patent">
+                    <div class="box4_cont_header">Патинирование</div>
+                    <div class="box4_main_price">4000 Р.</div>
+                  </div>
+                  <div class="box4_litle_content">
+                    искусственное состаривание кожи
+                  </div>
+                </div>
+                <div class="box4_content_right">
+                  <div class="uhod_skin_fish">
+                    <div class="box4_cont_header">
+                      Уход за обувью из кардована,<br />
+                      рептилий, рыбьей кожи
+                    </div>
+                    <div class="box4_main_price">2000 P.</div>
+                  </div>
+
+                  <div class="box4_cont_header new_color">
+                    Новый цвет/перекраска
+                  </div>
+                  <div class="box4_cont_price">
+                    <p>Низкие (<15 см) — 3000 Р.</p>
+                    <p>Средние (15—30 см) — 4000 Р.</p>
+                    <p>Высокие (>30 см) — 5000 Р.</p>
+                  </div>
+                  <div class="box4_cont_header">Выведение реагентов</div>
+                  <div class="box4_litle_content">
+                    углубленная чистка и покраска, жировка, покрытие
+                    водоотталкивающими средствами
+                  </div>
+                  <div class="box4_cont_price">
+                    <p>Низкие (<15 см) — 3800 Р.</p>
+                    <p>Средние (15—30 см) — 4800 Р.</p>
+                    <p>Высокие (>30 см) — 5800 Р.</p>
+                  </div>
+                </div>
+              </div>
+
               <div class="btn_zakaz">
                 <button class="btn_zakaz_usluga">ЗАКАЗАТЬ УСЛУГУ</button>
               </div>
+
+              <p class="bottom_border"></p>
             </div>
-            <p class="bottom_border"></p>
           </div>
         </section>
 
@@ -467,66 +687,218 @@
 
         <section id="review" class="box6">
           <div class="wrapper">
-            <div class="box6_content">
-              <div class="direction_left">
-                <a href="#">
-                  <img src="img/direction_left_img.png" alt="" />
-                </a>
-              </div>
-              <div class="box6_img">
-                <img src="img/box6_iphone.png" alt="" />
-              </div>
-              <div class="box6_main">
-                <div class="box6_main_header">
-                  <div class="box6_main_header1">ЧТО ГОВОРЯТ НАШИ КЛИЕНТЫ</div>
-                  <div class="box6_main_header2">
-                    Получили ОБУВЬ КАК НОВУЮ<br />и даже лучше!
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide box6_content"
+              data-ride="carousel"
+            >
+              <ul class="box6_list carousel-indicators">
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="2"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="3"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="4"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="5"
+                ></li>
+              </ul>
+
+              <div class="box6_main carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-block w-100 box6_content">
+                    <div class="box6_img">
+                      <img src="img/box6_iphone.png" alt="" />
+                    </div>
+                    <div class="carousel_content">
+                      <div class="box6_main_header">
+                        <div class="box6_main_header1">
+                          ЧТО ГОВОРЯТ НАШИ КЛИЕНТЫ
+                        </div>
+                        <div class="box6_main_header2">
+                          Получили ОБУВЬ КАК НОВУЮ<br />и даже лучше!
+                        </div>
+                      </div>
+                      <div class="box6_main_content">
+                        Реставрация обуви просто шедевр!Зацепился в офисе за
+                        стул и сильно ободрал мыс! Долго выбирал куда сдать-в
+                        интернете предложений много, но в мутные конторы
+                        отвозить побоялся!Вернули обувь от Сантони как новую!
+                        Цена устроила-все разумно! Я незнаю как они это
+                        делают,но это очень высокое качество!
+                      </div>
+                      <div class="box6_main_name">АНДРЕЙ</div>
+                    </div>
                   </div>
                 </div>
-                <div class="box6_main_content">
-                  Реставрация обуви просто шедевр!Зацепился в офисе за стул и
-                  сильно ободрал мыс! Долго выбирал куда сдать-в интернете
-                  предложений много, но в мутные конторы отвозить
-                  побоялся!Вернули обувь от Сантони как новую! Цена устроила-все
-                  разумно! Я незнаю как они это делают,но это очень высокое
-                  качество!
+                <div class="carousel-item">
+                  <span class="d-block w-100">
+                    <div class="box6_img">
+                      <img src="img/box6_iphone.png" alt="" />
+                    </div>
+                    <div class="box6_main_header">
+                      <div class="box6_main_header1">
+                        ЧТО ГОВОРЯТ НАШИ КЛИЕНТЫ
+                      </div>
+                      <div class="box6_main_header2">
+                        Получили ОБУВЬ КАК НОВУЮ<br />и даже лучше!
+                      </div>
+                    </div>
+                    <div class="box6_main_content">
+                      Реставрация обуви просто шедевр!Зацепился в офисе за стул
+                      и сильно ободрал мыс! Долго выбирал куда сдать-в интернете
+                      предложений много, но в мутные конторы отвозить
+                      побоялся!Вернули обувь от Сантони как новую! Цена
+                      устроила-все разумно! Я незнаю как они это делают,но это
+                      очень высокое качество!
+                    </div>
+                    <div class="box6_main_name">василий</div>
+                  </span>
                 </div>
-                <div class="box6_main_name">АНДРЕЙ</div>
-                <div>
-                  <ul class="box6_list">
-                    <li>
-                      <a href="#"><img src="img/box6_line.png" alt="" /></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><img src="img/box6_line_brown.png" alt=""
-                      /></a>
-                    </li>
-                    <li>
-                      <a href="#"><img src="img/box6_line.png" alt="" /></a>
-                    </li>
-                    <li>
-                      <a href="#"><img src="img/box6_line.png" alt="" /></a>
-                    </li>
-                    <li>
-                      <a href="#"><img src="img/box6_line.png" alt="" /></a>
-                    </li>
-                    <li>
-                      <a href="#"><img src="img/box6_line.png" alt="" /></a>
-                    </li>
-                  </ul>
+                <div class="carousel-item">
+                  <span class="d-block w-100">
+                    <div class="box6_img">
+                      <img src="img/box6_iphone.png" alt="" />
+                    </div>
+                    <div class="box6_main_header">
+                      <div class="box6_main_header1">
+                        ЧТО ГОВОРЯТ НАШИ КЛИЕНТЫ
+                      </div>
+                      <div class="box6_main_header2">
+                        Получили ОБУВЬ КАК НОВУЮ<br />и даже лучше!
+                      </div>
+                    </div>
+                    <div class="box6_main_content">
+                      Реставрация обуви просто шедевр!Зацепился в офисе за стул
+                      и сильно ободрал мыс! Долго выбирал куда сдать-в интернете
+                      предложений много, но в мутные конторы отвозить
+                      побоялся!Вернули обувь от Сантони как новую! Цена
+                      устроила-все разумно! Я незнаю как они это делают,но это
+                      очень высокое качество!
+                    </div>
+                    <div class="box6_main_name">Сергей</div>
+                  </span>
+                </div>
+                <div class="carousel-item">
+                  <span class="d-block w-100">
+                    <div class="box6_img">
+                      <img src="img/box6_iphone.png" alt="" />
+                    </div>
+                    <div class="box6_main_header">
+                      <div class="box6_main_header1">
+                        ЧТО ГОВОРЯТ НАШИ КЛИЕНТЫ
+                      </div>
+                      <div class="box6_main_header2">
+                        Получили ОБУВЬ КАК НОВУЮ<br />и даже лучше!
+                      </div>
+                    </div>
+                    <div class="box6_main_content">
+                      Реставрация обуви просто шедевр!Зацепился в офисе за стул
+                      и сильно ободрал мыс! Долго выбирал куда сдать-в интернете
+                      предложений много, но в мутные конторы отвозить
+                      побоялся!Вернули обувь от Сантони как новую! Цена
+                      устроила-все разумно! Я незнаю как они это делают,но это
+                      очень высокое качество!
+                    </div>
+                    <div class="box6_main_name">АЛИНА</div>
+                  </span>
+                </div>
+                <div class="carousel-item">
+                  <span class="d-block w-100">
+                    <div class="box6_img">
+                      <img src="img/box6_iphone.png" alt="" />
+                    </div>
+                    <div class="box6_main_header">
+                      <div class="box6_main_header1">
+                        ЧТО ГОВОРЯТ НАШИ КЛИЕНТЫ
+                      </div>
+                      <div class="box6_main_header2">
+                        Получили ОБУВЬ КАК НОВУЮ<br />и даже лучше!
+                      </div>
+                    </div>
+                    <div class="box6_main_content">
+                      Реставрация обуви просто шедевр!Зацепился в офисе за стул
+                      и сильно ободрал мыс! Долго выбирал куда сдать-в интернете
+                      предложений много, но в мутные конторы отвозить
+                      побоялся!Вернули обувь от Сантони как новую! Цена
+                      устроила-все разумно! Я незнаю как они это делают,но это
+                      очень высокое качество!
+                    </div>
+
+                    <div class="box6_main_name">ОЛЬГА</div>
+                  </span>
+                </div>
+                <div class="carousel-item">
+                  <span class="d-block w-100">
+                    <div class="box6_img">
+                      <img src="img/box6_iphone.png" alt="" />
+                    </div>
+                    <div class="box6_main_header">
+                      <div class="box6_main_header1">
+                        ЧТО ГОВОРЯТ НАШИ КЛИЕНТЫ
+                      </div>
+                      <div class="box6_main_header2">
+                        Получили ОБУВЬ КАК НОВУЮ<br />и даже лучше!
+                      </div>
+                    </div>
+                    <div class="box6_main_content">
+                      Реставрация обуви просто шедевр!Зацепился в офисе за стул
+                      и сильно ободрал мыс! Долго выбирал куда сдать-в интернете
+                      предложений много, но в мутные конторы отвозить
+                      побоялся!Вернули обувь от Сантони как новую! Цена
+                      устроила-все разумно! Я незнаю как они это делают,но это
+                      очень высокое качество!
+                    </div>
+                    <div class="box6_main_name">Иван</div>
+                  </span>
                 </div>
               </div>
-              <div class="direction_right">
-                <a href="#">
-                  <img
+              <a
+                class="carousel-control-prev"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon prev_icon"
+                  aria-hidden="true"
+                  ><img src="img/direction_left_img.png" alt=""
+                /></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon next_icon"
+                  aria-hidden="true"
+                  ><img
                     src="img/direction_right_img.png"
                     alt=""
                     sizes=""
                     srcset=""
-                  />
-                </a>
-              </div>
+                /></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
           </div>
         </section>
@@ -608,7 +980,27 @@
         </div>
         <div class="over">Dva_shnurka @2020 Все права защищены</div>
       </footer>
+      <div class="btn_up">
+        <a href="#"><img src="img/images.png" alt="" /></a>
+      </div>
     </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="js/script.js"></script>
   </body>
 </html>
